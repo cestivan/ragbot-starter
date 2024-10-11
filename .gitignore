@@ -30,6 +30,28 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+# Environment Files
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+logs/
+*.log
+
+# Temporary Files
+tmp/
+*.tmp
+
+# Build Artifacts
+build/
+dist/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
 
 # Installer logs
 pip-log.txt
@@ -160,3 +182,24 @@ cython_debug/
 
 node_modules
 .next
+# Environment Files
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+logs/
+*.log
+
+# Temporary Files
+tmp/
+*.tmp
+
+# Build Artifacts
+build/
+dist/
+
+# OS generated files
+.DS_Store
+Thumbs.db
