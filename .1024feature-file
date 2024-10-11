@@ -1,0 +1,5 @@
+fileChangeLogs:
+  - node_modules
+  - .gitignore
+  - .next
+  - '.1024'
