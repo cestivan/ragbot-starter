@@ -3,3 +3,4 @@ fileChangeLogs:
   - .gitignore
   - .next
   - '.1024'
+  - README.md
