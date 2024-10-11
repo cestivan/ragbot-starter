@@ -1,44 +1,44 @@
-# RAGBot Starter
+# RAGBot 启动器
 
-This project is a starter for creating a chatbot using Astra DB and OpenAI. It's designed to be easy to deploy and use, with a focus on performance and usability.
+该项目是一个使用 Astra DB 和 OpenAI 创建聊天机器人的启动器。旨在易于部署和使用，重点关注性能和可用性。
 
-## Features
+## 功能
 
-- **Astra DB Integration**: Store and retrieve data from your Astra DB database with ease.
-- **OpenAI Integration**: Leverage the power of OpenAI to generate intelligent responses.
-- **Easy Deployment**: Deploy your chatbot to Vercel with just a few clicks.
-- **Customizable**: Modify and extend the chatbot to suit your needs.
+- **Astra DB 集成**：轻松存储和检索 Astra DB 数据库中的数据。
+- **OpenAI 集成**：利用 OpenAI 的强大功能生成智能回复。
+- **轻松部署**：只需点击几下即可将聊天机器人部署到 Vercel。
+- **可定制**：修改和扩展聊天机器人以满足您的需求。
 
-## Getting Started
+## 入门
 
-### Prerequisites
+### 先决条件
 
-- An Astra DB account. You can [create one here](https://astra.datastax.com/register).
-    - An Astra Vector Database
-- An OpenAI account. You can [create one here](https://platform.openai.com/).
+- 一个 Astra DB 账户。您可以 [在这里创建一个](https://astra.datastax.com/register)。
+    - 一个 Astra 向量数据库
+- 一个 OpenAI 账户。您可以 [在这里创建一个](https://platform.openai.com/)。
 
-## Deployment
+## 部署
 
-Easily deploy your chatbot to Vercel by clicking the button below:
+轻松通过点击下面的按钮将聊天机器人部署到 Vercel：
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/datastax/ragbot-starter&integration-ids=oac_HrgeXUSyqANAtm3MAOaTJ43a&env=OPENAI_API_KEY)
 
-Configure the Astra DB integration and add your `OPENAI_API_KEY` environment variable.
+配置 Astra DB 集成并添加您的 `OPENAI_API_KEY` 环境变量。
 
-Note: Before you deploying to prod, you will want to remove seed script (`npm run seed`) from the build step.
+注意：在部署到生产环境之前，您需要从构建步骤中删除种子脚本（`npm run seed`）。
 
-### Local Development
+### 本地开发
 
-1. Clone this repository to your local machine.
-2. Install the dependencies by running `npm install` in your terminal.
-3. Set up the following environment variables in your IDE or `.env` file:
-    - `OPENAI_API_KEY`: Your API key for OpenAI
-    - `ASTRA_DB_API_ENDPOINT`: Your Astra DB vector database endpoint
-    - `ASTRA_DB_APPLICATION_TOKEN`: The generated app token for your Astra database
-        - To create a new token go to your database's `Connect` tab and click `Generate Token`. (your Application Token begins with `AstraCS:...`)
-    - `ASTRA_DB_NAMESPACE`: (Optional) The existing Astra Namespace/Keyspace **_in a vector-enabled DB_**
-4. Populate your database with sample data by running `npm run seed` in your terminal.
+1. 将此存储库克隆到您的本地机器。
+2. 通过在终端运行 `npm install` 安装依赖项。
+3. 在您的 IDE 或 `.env` 文件中设置以下环境变量：
+    - `OPENAI_API_KEY`：您的 OpenAI API 密钥
+    - `ASTRA_DB_API_ENDPOINT`：您的 Astra DB 向量数据库端点
+    - `ASTRA_DB_APPLICATION_TOKEN`：生成的 Astra 数据库应用令牌
+        - 要创建新的令牌，请转到数据库的 `Connect` 标签并单击 `Generate Token`。（您的应用令牌以 `AstraCS:...` 开头）
+    - `ASTRA_DB_NAMESPACE`：（可选）现有 Astra 名称空间/键空间 **_在启用向量的数据库中_**
+4. 通过在终端中运行 `npm run seed` 为您的数据库填充示例数据。
 
-### Running the Project
+### 运行项目
 
-To start the development server, run `npm run dev` in your terminal. Open [http://localhost:3000](http://localhost:3000) to view the chatbot in your browser.
+要启动开发服务器，请在终端中运行 `npm run dev`。打开 [http://localhost:3000](http://localhost:3000) 在您的浏览器中查看聊天机器人。
