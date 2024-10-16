@@ -15,7 +15,7 @@ const Dropdown = ({ fieldId, label, options, value, onSelect }) => {
         >
           {options.map((option, idx) => (
             <option key={idx} value={option.value}>
-              {option.label}
+              {option.label === 'Some Label' ? '一些标签' : option.label}
             </option>
           ))}
         </select>

@@ -2,10 +2,10 @@ import PromptSuggestionButton from "./PromptSuggestionButton";
 
 const PromptSuggestionRow = ({ onPromptClick }) => {
   const prompts = [
-    'How does similarity search work with a Vector DB?',
-    'What is DataStax Enterprise?',
-    'How does CassIO work?',
-    'What are some common FAQs about Astra?',
+    '相似性搜索如何与矢量数据库一起工作？',
+    '什么是 DataStax Enterprise？',
+    'CassIO 如何工作？',
+    '关于 Astra 的常见问题有哪些？',
   ];
 
   return (
