@@ -26,9 +26,9 @@ const Configure = ({ isOpen, onClose, useRag, llm, similarityMetric, setConfigur
   ];
 
   const similarityMetricOptions = [
-    { label: 'Cosine Similarity', value: 'cosine' },
-    { label: 'Euclidean Distance', value: 'euclidean' },
-    { label: 'Dot Product', value: 'dot_product' }
+    { label: '余弦相似度', value: 'cosine' },
+    { label: '欧几里得距离', value: 'euclidean' },
+    { label: '点积', value: 'dot_product' }
   ];
 
   const handleSave = () => {
@@ -45,7 +45,7 @@ const Configure = ({ isOpen, onClose, useRag, llm, similarityMetric, setConfigur
       <div className="chatbot-section flex flex-col origin:w-[800px] w-full origin:h-[735px] h-full p-6 rounded shadow-lg overflow-auto">
         <div className="grow">
           <div className='pb-6 flex justify-between'>
-            <h1 className='chatbot-text-primary text-xl md:text-2xl font-medium'>Configure</h1>
+            <h1 className='chatbot-text-primary text-xl md:text-2xl font-medium'>配置</h1>
             <button
               onClick={onClose}
               className="chatbot-text-primary text-4xl font-thin leading-8"
@@ -77,13 +77,13 @@ const Configure = ({ isOpen, onClose, useRag, llm, similarityMetric, setConfigur
               className='chatbot-button-secondary flex rounded-md items-center justify-center px-2.5 py-3'
               onClick={onClose}
             >
-              Cancel
+              取消
             </button>
             <button
               className='chatbot-button-primary flex rounded-md items-center justify-center px-2.5 py-3'
               onClick={handleSave}
             >
-              Save Configuration
+              保存配置
             </button>
           </div>
           <Footer />

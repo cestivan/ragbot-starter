@@ -4,3 +4,13 @@ fileChangeLogs:
   - .next
   - '.1024'
   - README.md
+  - package.json
+  - app/i18n.ts
+  - components/Configure.tsx
+  - components/Bubble.tsx
+  - components/Dropdown.tsx
+  - components/Toggle.tsx
+  - components/PromptSuggestions/PromptSuggestionButton.tsx
+  - components/PromptSuggestions/PromptSuggestionsRow.tsx
+  - app/page.tsx
+  - components/Footer.tsx
